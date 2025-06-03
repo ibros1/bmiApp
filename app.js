@@ -36,7 +36,7 @@ const calculateBmi = (e) => {
       bmiStatus.textContent = "Overweight";
     } else if (result < 35) {
       bmiStatus.textContent = "too Obese";
-    } else {
+    } else if (result > 35){
       bmiStatus.textContent = "too too opicity";
     }
     return;
@@ -60,8 +60,8 @@ window.addEventListener("DOMContentLoaded", () => {
     bmiStatus.textContent = "Overweight";
   } else if (result < 35) {
     bmiStatus.textContent = "too Obese";
-  } else {
-    bmiStatus.textContent = "too too opicity";
-  }
+  } else if (result > 35){
+      bmiStatus.textContent = "too too opicity";
+    }
   bmiIndex.textContent = parseFloat(storedData).toFixed(2);
 });
