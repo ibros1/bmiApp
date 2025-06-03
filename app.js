@@ -28,7 +28,7 @@ const calculateBmi = (e) => {
 
     if (result < 16) {
       bmiStatus.textContent = "Severely Underweight";
-    } else if (result < 18.5) {
+    } else if (result < 18) {
       bmiStatus.textContent = "Underweight";
     } else if (result < 25) {
       bmiStatus.textContent = "Normal";
@@ -52,7 +52,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const result = parseFloat(storedData).toFixed(2);
   if (result < 16) {
     bmiStatus.textContent = "Severely Underweight";
-  } else if (result < 18.5) {
+  } else if (result < 18) {
     bmiStatus.textContent = "Underweight";
   } else if (result < 25) {
     bmiStatus.textContent = "Normal";
