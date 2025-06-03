@@ -62,8 +62,10 @@ window.addEventListener("DOMContentLoaded", () => {
     bmiStatus.textContent = "too Obese";
   } else if (result > 35){
       bmiStatus.textContent = "too too opicity";
-    } else if (result == NaN) {
+    } else {
     bmiStatus.textContent = "Generate";
+    bmiIndex.textContent = "Generate";
+    return;
   }
   bmiIndex.textContent = parseFloat(storedData).toFixed(2);
 });
